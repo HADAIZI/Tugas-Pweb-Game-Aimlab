@@ -7,6 +7,9 @@
 ## Deskripsi
 Game aim trainer biasa yg akan menguji seberapa akurat anda kira kira dalam game fps. Tujuan dari game ini adalah memiliki hits dan accuracy tertingi yg bisa kau lakukan dalam kurun waktu. Pada game ini terdapat 5 pilihan waktu yaitu 10 detik, 30 detik, 1 menit, 2 menit, unlimited dengan 3 pilihan diff yaitu EZ, MID, Hard yg ksulitannya ditentukan oleh seberapa cepat lingkaran menutup. Pada game ini terdapat 3 nyawa yg akan berkurang jika lingkaran berhasil menutup sampai 0. Terdapat juga fitur fullscreen yg akan membantu anda lebih fokus.
 
+## Link Demo
+https://tugas-pweb-game-js.vercel.app/
+
 ## Screenshots
 ![image](https://github.com/HADAIZI/Tugas-Pweb-Game-Js/assets/90259304/27b9e257-ba3c-4cd9-82ad-6014b49896b1)
 
