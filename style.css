@@ -185,14 +185,128 @@ h1 {
     }
 }
 
-
 .screen:nth-child(1), .screen:nth-child(2), .screen:nth-child(3){
     background-image: url('sakura.jpg');
     background-size: 100% 100%; 
 }
 
-
 .screen:nth-child(4) {
     background-image: none;
     background-color: var(--background-color); 
+}
+
+/* Login and Register Styles */
+
+.login-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.login-register-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.login-register-form h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.login-register-form .input-group {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-register-form .input-group label {
+    font-weight: bold;
+}
+
+.login-register-form .input-group input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-register-form .btn {
+    margin: 10px 0;
+    background-color: var(--button-accent);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-register-form .btn:hover {
+    background-color: var(--primary-color);
+}
+
+.login-register-form .error {
+    color: red;
+    margin: 5px 0;
+}
+
+.login-register-form .success {
+    color: green;
+    margin: 5px 0;
+}
+
+.login-register-form .switch-form {
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Gaya tombol login dan registrasi */
+.form-container button {
+    background-color: var(--button-accent);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-container button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Gaya tombol yang tersembunyi */
+#switchToLogin, #switchToRegistration {
+    cursor: pointer;
+    color: var(--button-accent);
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+#switchToLogin:hover, #switchToRegistration:hover {
+    color: var(--primary-color);
+}
+
+/* Gaya tombol login yang aktif */
+#loginButton, #registerButton {
+    background-color: var(--button-accent);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#loginButton:hover, #registerButton:hover {
+    background-color: var(--primary-color);
 }

@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html   lang="en">
-    <head>
-        <meta charset = "UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-        <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
-        <link rel="stylesheet" href="style.css"/>
-        <title>Aim Trainer</title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aim Trainer</title>
+</head>
+<body>
+    <div class="screen" id="loginScreen">
+        <div class="form-container" id="registrationForm">
+            <p>Please enter your name:</p>
+            <input type="text" id="userName" />
+            <p>Please enter your email:</p>
+            <input type="text" id="userEmail" />
+            <p>Please enter your password:</p>
+            <input type="password" id="userPassword" />
+            <button id="registerButton">Register</button>
+            <p>
+              Already have an account?
+              <span id="switchToLogin">Log in here</span>
+            </p>
+        </div>
+
+        <div class="form-container" id="loginForm" style="display: none">
+            <p>Please enter your email:</p>
+            <input type="text" id="loginEmail" />
+            <p>Please enter your password:</p>
+            <input type="password" id="loginPassword" />
+            <button id="loginButton">Log in</button>
+            <p>
+              Don't have an account?
+              <span id="switchToRegistration">Register here</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Game Screen (hidden by default) -->
+    <div id="game-screen" style="display: none;">
         <div class="screen">
             <h1>Aim Trainer</h1>
             <button class="btn" id="start">Start</button>
@@ -76,7 +106,9 @@
                 <p>Accuracy: <span id="accuracy-over">0</span></p>
             </div>
             <button class="btn restart">Restart</button>
-        </div>
-        <script src="script.js"></script>
-    </body>
+    </div>
+
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+</body>
 </html>
